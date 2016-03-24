@@ -1133,7 +1133,7 @@
 		</pluginManagement>
 	</build>
 
-	<!--
+
 	<repositories> 
 		<repository>
 			<id>Common Release</id>
@@ -1185,7 +1185,7 @@
 			<url>http://logicaldoc.sourceforge.net/maven</url>
 		</repository>
 	</repositories>
-	-->
+
 	
 	<distributionManagement>
 		<repository>
