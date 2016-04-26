@@ -66,7 +66,7 @@
 		<httpclient.version>4.3.5</httpclient.version>
 		<httpasyncclient.version>4.0.2</httpasyncclient.version>
 		<httpmime.version>4.3.4</httpmime.version>
-		<jackson.json.version>2.5.1</jackson.json.version>
+		<jackson.json.version>2.5.4</jackson.json.version>
 		<flexjson.version>2.1</flexjson.version>
 		<guava.version>18.0</guava.version>
 		<activation.version>1.1.1</activation.version>
@@ -235,8 +235,16 @@
 		</dependency>
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
-			<artifactId>jackson-databind</artifactId>
+			<artifactId>jackson-core</artifactId>
 		</dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+        </dependency>
 		<dependency>
 			<groupId>com.belerweb</groupId>
 			<artifactId>pinyin4j</artifactId>
@@ -607,11 +615,21 @@
 				<version>${javabase64.version}</version>
 			</dependency>
 			<!-- Json -->
-			<dependency>
-				<groupId>com.fasterxml.jackson.core</groupId>
-				<artifactId>jackson-databind</artifactId>
-				<version>${jackson.json.version}</version>
-			</dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>${jackson.json.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson.json.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>${jackson.json.version}</version>
+            </dependency>
 			<!-- Javax Support -->
 			<dependency>
 				<groupId>taglibs</groupId>
