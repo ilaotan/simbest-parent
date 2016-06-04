@@ -473,6 +473,13 @@
 		    <artifactId>swagger-springmvc</artifactId>
 		    <version>1.0.2</version>
 		</dependency>-->
+        <!-- 集合索引与查找-->
+        <dependency>
+            <groupId>com.googlecode.cqengine</groupId>
+            <artifactId>cqengine</artifactId>
+            <version>2.6.0</version>
+        </dependency>
+        <!--CharsetUtil 检测字符集编码-->
 		<dependency>
 		    <groupId>com.googlecode.juniversalchardet</groupId>
 		    <artifactId>juniversalchardet</artifactId>
