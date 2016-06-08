@@ -883,12 +883,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
-			</plugin>
-			<!-- 依赖库发布插件 -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-deploy-plugin</artifactId>
-			</plugin>
+			</plugin>			
 			<!-- Eclipse插件 -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -903,6 +898,11 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId>
+			</plugin>
+			<!-- 依赖库发布插件 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-deploy-plugin</artifactId>
 			</plugin>
 			<plugin>
 				<groupId>com.github.github</groupId>
@@ -959,15 +959,6 @@
 							</configuration>
 						</execution>
 					</executions>
-				</plugin>
-				<!-- 依赖库发布插件 -->
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-deploy-plugin</artifactId>
-					<version>${maven-deploy-plugin.version}</version>
-					<configuration>
-						<altDeploymentRepository>internal.repo::default::file://${project.build.directory}/mvn-repo</altDeploymentRepository>
-					</configuration>
 				</plugin>
 				<!-- Eclipse插件 -->
 				<plugin>
@@ -1146,22 +1137,30 @@
 						<path>/${project.artifactId}</path>
 						<port>8888</port>
 					</configuration>
+				</plugin>				
+				<!-- 依赖库发布插件 -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-deploy-plugin</artifactId>
+					<version>${maven-deploy-plugin.version}</version>
+					<configuration>
+						<altDeploymentRepository>internal.repo::default::file://${project.build.directory}/mvn-repo</altDeploymentRepository>
+					</configuration>
 				</plugin>
 				<plugin>
 					<groupId>com.github.github</groupId>
 					<artifactId>site-maven-plugin</artifactId>
 					<version>${github-site-maven-plugin.version}</version>
 					<configuration>
-						<message>Maven artifacts for ${project.version}</message>  <!-- git commit message -->
-						<noJekyll>true</noJekyll>                                  <!-- disable webpage processing -->
-						<outputDirectory>${project.build.directory}/mvn-repo</outputDirectory> <!-- matches distribution management repository url above -->
-						<branch>refs/heads/mvn-repo</branch>                       <!-- remote branch name -->
+						<message>Maven artifacts for ${project.version}</message>  
+						<noJekyll>true</noJekyll>                                 
+						<outputDirectory>${project.build.directory}/mvn-repo</outputDirectory> 
+						<branch>refs/heads/mvn-repo</branch>                      
 						<includes><include>**/*</include></includes>
-						<repositoryName>${project.artifactId}</repositoryName>      <!-- github repo name -->
-						<repositoryOwner>simbest</repositoryOwner>    <!-- github username  -->
+						<repositoryName>${project.artifactId}</repositoryName>
+						<repositoryOwner>simbest</repositoryOwner> 
 					</configuration>
 					<executions>
-					  <!-- run site-maven-plugin's 'site' target as part of the build's normal 'deploy' phase -->
 					  <execution>
 						<goals>
 						  <goal>site</goal>
@@ -1256,6 +1255,7 @@
 
 	
 	<distributionManagement>
+	    
 		<repository>
 			<id>internal.repo</id>
 			<name>Temporary Staging Repository</name>
