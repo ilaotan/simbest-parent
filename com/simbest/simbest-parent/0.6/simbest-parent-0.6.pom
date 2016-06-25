@@ -854,6 +854,12 @@
 				  <include>**/*.xsd</include>
 				  <include>**/*.wsdl</include>
 		          <include>**/*.properties</include>
+				  <include>**/*.bpmn20.xml</include>
+				  <include>**/*.bpmn</include>
+				  <include>**/*.bar</include>
+				  <include>**/*.zip</include>
+				  <include>**/*.png</include>
+				  <include>**/*.form</include>
 		        </includes>
 				<filtering>true</filtering>
 			</resource>
