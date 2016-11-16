@@ -1188,14 +1188,14 @@
 
 	<repositories> 
 		<!-- 推荐使用oschina仓库 -->
-        <repository>
+        <!-- <repository>
             <id>nexus-osc</id>
             <url>http://maven.oschina.net/content/groups/public/</url>
         </repository>
         <repository>
             <id>nexus-osc-thirdparty</id>
             <url>http://maven.oschina.net/content/repositories/thirdparty/</url>
-        </repository>
+        </repository>-->
 		<repository>
 			<id>Common Release</id>
 			<name>Central repository</name>
@@ -1204,10 +1204,10 @@
 				<enabled>false</enabled>
 			</snapshots>
 		</repository>
-		<repository>
+		<!-- <repository>
 			<id>cloudera</id>
 			<url>https://repository.cloudera.com/artifactory/cloudera-repos/</url>
-		</repository>
+		</repository>-->
 		<repository>
             <id>simbest-maven-repo1</id>
             <url>https://raw.github.com/simbest/simbest-maven-repo/master/repository/</url>
