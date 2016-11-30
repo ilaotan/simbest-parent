@@ -380,6 +380,11 @@
             <artifactId>shiro-redis-session</artifactId>
             <version>1.0.0</version>
         </dependency>
+		<dependency>
+			<groupId>dance</groupId>
+			<artifactId>Distributed-Kit</artifactId>
+			<version>0.0.1</version>
+		</dependency>
 		<!-- SECURITY -->
 		<dependency>
 			<groupId>org.apache.shiro</groupId>
@@ -786,11 +791,6 @@
 				<groupId>redis.clients</groupId>
 				<artifactId>jedis</artifactId>
 				<version>${jedis.version}</version>
-			</dependency>
-			<dependency>
-			  <groupId>dance</groupId>
-			  <artifactId>Distributed-Kit</artifactId>
-			  <version>0.0.1</version>
 			</dependency>
 			<!-- SECURITY -->
 			<dependency>
