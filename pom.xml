@@ -787,6 +787,11 @@
 				<artifactId>jedis</artifactId>
 				<version>${jedis.version}</version>
 			</dependency>
+			<dependency>
+			  <groupId>dance</groupId>
+			  <artifactId>Distributed-Kit</artifactId>
+			  <version>0.0.1</version>
+			</dependency>
 			<!-- SECURITY -->
 			<dependency>
 				<groupId>org.apache.shiro</groupId>
