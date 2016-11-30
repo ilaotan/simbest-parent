@@ -378,12 +378,10 @@
 		<dependency>
             <groupId>io.longyuan</groupId>
             <artifactId>shiro-redis-session</artifactId>
-            <version>1.0.0</version>
         </dependency>
 		<dependency>
 			<groupId>dance</groupId>
 			<artifactId>Distributed-Kit</artifactId>
-			<version>0.0.1</version>
 		</dependency>
 		<!-- SECURITY -->
 		<dependency>
@@ -792,6 +790,32 @@
 				<artifactId>jedis</artifactId>
 				<version>${jedis.version}</version>
 			</dependency>
+            <dependency>
+                <groupId>io.longyuan</groupId>
+                <artifactId>shiro-redis-session</artifactId>
+                <version>1.0.0</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>*</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>ch.qos.logback</groupId>
+                        <artifactId>*</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>dance</groupId>
+                <artifactId>Distributed-Kit</artifactId>
+                <version>0.0.1</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>ch.qos.logback</groupId>
+                        <artifactId>*</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
 			<!-- SECURITY -->
 			<dependency>
 				<groupId>org.apache.shiro</groupId>
