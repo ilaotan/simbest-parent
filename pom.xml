@@ -48,7 +48,7 @@
 		<jdbc.artifactId>mysql-connector-java</jdbc.artifactId>
 		<jdbc.version>5.1.38</jdbc.version>
 		<jdbc.driverClassName>com.mysql.jdbc.Driver</jdbc.driverClassName>
-
+		
 		<!-- Project Commons versions -->
 		<slf4j.version>1.7.5</slf4j.version>
 		<log4j.version>1.2.17</log4j.version>
@@ -136,6 +136,11 @@
 	<!-- ==== Dependencies Start ==== -->
 	<dependencies>
 		<!-- Database -->
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>ojdbc14</artifactId>
+            <version>10.2.0.2.0</version>
+        </dependency>
 		<dependency>
 			<groupId>${jdbc.groupId}</groupId>
 			<artifactId>${jdbc.artifactId}</artifactId>
