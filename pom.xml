@@ -191,6 +191,12 @@
 			<groupId>commons-configuration</groupId>
 			<artifactId>commons-configuration</artifactId>
 		</dependency>
+		<!--  Http Request Library  https://github.com/kevinsawicki/http-request -->
+		<dependency>
+		  <groupId>com.github.kevinsawicki</groupId>
+		  <artifactId>http-request</artifactId>
+		  <version>6.0</version>
+		</dependency>
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpclient</artifactId>
