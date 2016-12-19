@@ -530,7 +530,7 @@
 		<dependency>
 			<groupId>net.bull.javamelody</groupId>
 			<artifactId>javamelody-core</artifactId>
-			<version>1.59.0</version>
+			<version>1.62.0</version>
 		</dependency>
 	</dependencies>
 	<!-- ==== Dependencies End ==== -->
@@ -1062,6 +1062,7 @@
 								  <include>**/*.xsd</include>
 								  <include>**/*.wsdl</include>
 						          <include>**/*.properties</include>
+								  <include>**/*.pem</include>
 						        </includes>
 								<filtering>true</filtering>
 							</resource>
