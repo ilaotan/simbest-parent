@@ -917,6 +917,7 @@
 				  <include>**/*.zip</include>
 				  <include>**/*.png</include>
 				  <include>**/*.form</include>
+				  <include>**/*.pem</include>
 		        </includes>
 				<filtering>true</filtering>
 			</resource>
@@ -1058,10 +1059,16 @@
 							<resource>
 								<directory>src/main/resources</directory>
 								<includes>
-						          <include>**/*.xml</include>
+								  <include>**/*.xml</include>
 								  <include>**/*.xsd</include>
 								  <include>**/*.wsdl</include>
-						          <include>**/*.properties</include>
+								  <include>**/*.properties</include>
+								  <include>**/*.bpmn20.xml</include>
+								  <include>**/*.bpmn</include>
+								  <include>**/*.bar</include>
+								  <include>**/*.zip</include>
+								  <include>**/*.png</include>
+								  <include>**/*.form</include>
 								  <include>**/*.pem</include>
 						        </includes>
 								<filtering>true</filtering>
