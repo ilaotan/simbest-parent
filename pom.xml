@@ -64,9 +64,9 @@
 			https://github.com/chanjarster/weixin-java-tools/issues/172
 			http://stackoverflow.com/questions/29104643/httpclienterror-the-target-server-failed-to-respond
 		-->
-		<httpclient.version>4.3.5</httpclient.version>
-		<httpasyncclient.version>4.0.2</httpasyncclient.version>
-		<httpmime.version>4.3.4</httpmime.version>
+		<httpclient.version>4.5</httpclient.version>
+		<httpasyncclient.version>4.1</httpasyncclient.version>
+		<httpmime.version>4.5</httpmime.version>
 		<jackson.json.version>2.5.4</jackson.json.version>
 		<flexjson.version>2.1</flexjson.version>
 		<guava.version>18.0</guava.version>
