@@ -64,15 +64,15 @@
 			https://github.com/chanjarster/weixin-java-tools/issues/172
 			http://stackoverflow.com/questions/29104643/httpclienterror-the-target-server-failed-to-respond
 		-->
-		<httpclient.version>4.3.5</httpclient.version>
-		<httpasyncclient.version>4.0.2</httpasyncclient.version>
-		<httpmime.version>4.3.4</httpmime.version>
+		<httpclient.version>4.5</httpclient.version>
+		<httpasyncclient.version>4.1</httpasyncclient.version>
+		<httpmime.version>4.5</httpmime.version>
 		<jackson.json.version>2.5.4</jackson.json.version>
 		<flexjson.version>2.1</flexjson.version>
 		<guava.version>18.0</guava.version>
 		<activation.version>1.1.1</activation.version>
 		<dom4j.version>1.6.1</dom4j.version>
-		<xstream.version>1.3.1</xstream.version>
+		<xstream.version>1.4.9</xstream.version>
 		<!-- 3rd dependency versions -->
 		<javabase64.version>1.3</javabase64.version>
 		<baidu.bos.version>0.8.1</baidu.bos.version>
@@ -480,21 +480,6 @@
 			<groupId>com.itextpdf</groupId>
 			<artifactId>itext-asian</artifactId>
 			<version>5.2.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-    		<artifactId>poi-ooxml</artifactId>
-    		<version>3.9</version>
-		</dependency>
-		<dependency>
-    		<groupId>org.apache.poi</groupId>
-   			<artifactId>poi-ooxml-schemas</artifactId>
-    		<version>3.9</version>
-		</dependency>
-		<dependency>
-    		<groupId>org.apache.xmlbeans</groupId>
-    		<artifactId>xmlbeans</artifactId>
-    		<version>2.6.0</version>
 		</dependency>
 		<!--<dependency> <groupId>org.docx4j</groupId> <artifactId>docx4j</artifactId> 
 			<version>3.2.1</version> </dependency> -->
