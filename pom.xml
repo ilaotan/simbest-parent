@@ -541,12 +541,13 @@
             <artifactId>esapi</artifactId>
             <version>2.1.0</version>
         </dependency>
-		<!--应用监控-->
+		<!--应用监控
 		<dependency>
 			<groupId>net.bull.javamelody</groupId>
 			<artifactId>javamelody-core</artifactId>
 			<version>1.62.0</version>
 		</dependency>
+		-->
 	</dependencies>
 	<!-- ==== Dependencies End ==== -->
 
