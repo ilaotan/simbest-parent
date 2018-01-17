@@ -313,8 +313,10 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		<!-- <dependency> <groupId>com.octo.captcha</groupId> <artifactId>jcaptcha</artifactId> 
-			</dependency> -->
+		 <dependency>
+			<groupId>com.octo.captcha</groupId> 
+			<artifactId>jcaptcha</artifactId> 
+		</dependency> 
 		<!-- Srping -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -548,6 +550,11 @@
 			<version>1.62.0</version>
 		</dependency>
 		-->
+		<dependency>
+			<groupId>com.jhlabs</groupId>
+			<artifactId>imaging</artifactId>
+			<version>01012005</version>
+		</dependency>
 	</dependencies>
 	<!-- ==== Dependencies End ==== -->
 
@@ -712,9 +719,17 @@
 				<version>${jsp.version}</version>
 				<scope>provided</scope>
 			</dependency>
-			<!--<dependency> <groupId>com.octo.captcha</groupId> <artifactId>jcaptcha</artifactId> 
-				<version>${jcaptcha.version}</version> <exclusions> <exclusion> <artifactId>servlet-api</artifactId> 
-				<groupId>javax.servlet</groupId> </exclusion> </exclusions> </dependency> -->
+			<dependency> 
+				<groupId>com.octo.captcha</groupId> 
+				<artifactId>jcaptcha</artifactId> 
+				<version>${jcaptcha.version}</version> 
+					<exclusions> 
+						<exclusion> 
+						<artifactId>servlet-api</artifactId> 
+						<groupId>javax.servlet</groupId> 
+						</exclusion> 
+					</exclusions> 
+				</dependency> 
 			<dependency>
 				<groupId>javax.mail</groupId>
 				<artifactId>mail</artifactId>
