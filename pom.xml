@@ -949,6 +949,7 @@
 				  <include>**/*.png</include>
 				  <include>**/*.form</include>
 				  <include>**/*.pem</include>
+                  <include>**/*.p12</include>
 		        </includes>
 				<filtering>true</filtering>
 			</resource>
