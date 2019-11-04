@@ -135,12 +135,7 @@
 
 	<!-- ==== Dependencies Start ==== -->
 	<dependencies>
-		<!-- Database -->
-        <dependency>
-            <groupId>com.oracle</groupId>
-            <artifactId>ojdbc14</artifactId>
-            <version>10.2.0.2.0</version>
-        </dependency>
+		
 		<dependency>
 			<groupId>${jdbc.groupId}</groupId>
 			<artifactId>${jdbc.artifactId}</artifactId>
@@ -561,6 +556,12 @@
 	<!-- ==== Dependency Management Start ==== -->
 	<dependencyManagement>
 		<dependencies>
+			<!-- Database -->
+			<dependency>
+				<groupId>com.oracle</groupId>
+				<artifactId>ojdbc14</artifactId>
+				<version>10.2.0.2.0</version>
+			</dependency>
 			<!-- Test Configuration -->
 			<dependency>
 				<groupId>junit</groupId>
