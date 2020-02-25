@@ -67,7 +67,7 @@
 		<httpclient.version>4.5</httpclient.version>
 		<httpasyncclient.version>4.1</httpasyncclient.version>
 		<httpmime.version>4.5</httpmime.version>
-		<jackson.json.version>2.5.4</jackson.json.version>
+		<jackson.json.version>2.10.0</jackson.json.version>
 		<flexjson.version>2.1</flexjson.version>
 		<guava.version>18.0</guava.version>
 		<activation.version>1.1.1</activation.version>
